@@ -24,5 +24,3 @@ if [ $1 = '-h' ]
 then
     cat ./_help.txt
 fi
-
-#---- test 7
