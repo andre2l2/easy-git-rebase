@@ -1,3 +1,5 @@
--u <branch-1> <branch-2>      rebase from branch-1 to branch-1
+
+-u <branch-1> <branch-2>      rebase from branch-1 to branch-2
 -v                            show version infos
 -h                            show help infos
+
