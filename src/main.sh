@@ -1,13 +1,12 @@
 #!/bin/bash
 
-
 if [ $1 = "-u" ]
 then 
     git checkout $3
-    git pull
+    git pull --rebase
 
     git checkout $2
-    git pull
+    git pull --rebase
 
     git checkout $3
     git rebase $2
@@ -17,10 +16,10 @@ fi
 
 if [ $1 = "-v" ]
 then
-    cat ./_version.txt
+    cat ../docs/version.txt
 fi
 
 if [ $1 = '-h' ]
 then
-    cat ./_help.txt
+    cat ../docs/help.txt
 fi
