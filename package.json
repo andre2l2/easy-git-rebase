@@ -1,6 +1,6 @@
 {
   "name": "easy-git-rebase",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "A helper to git rebase",
   "main": "main.sh",
   "scripts": {
