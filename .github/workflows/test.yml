@@ -1,0 +1,14 @@
+name: test
+
+on: [push]
+jobs:
+  Run-test:
+    run-on: ubuntu-latest
+    steps:
+      - run: npx cowsay test
+      - run: echo test
+
+  Run-test:
+    run-on: ubuntu-latest
+    steps:
+      - run: npx cowsay test
