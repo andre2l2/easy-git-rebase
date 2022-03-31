@@ -1,0 +1,7 @@
+name: Run tasks
+
+on: [push]
+jobs:
+  Run-tasks:
+    - run: echo "run run run run"
+    - run: npx cowsay all be ok
