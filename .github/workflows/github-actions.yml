@@ -1,14 +1,13 @@
-name: Run tasks
+name: learn-github-actions
 
 on: [push]
 jobs:
-  Run-tasks:
+  check-bats-version:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "run run run run"
-      - run: npx cowsay all be ok
-
-  Run-more:
-    runs-on: ubuntu-latest
-    steps:
-      - run: echo run more
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: "14"
+      - run: npm install -g bats
+      - run: bats -v
